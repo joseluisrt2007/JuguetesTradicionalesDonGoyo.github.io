@@ -42,7 +42,7 @@ header {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('imagenes/prueba.jpg'); /* Asegúrate de que la ruta sea correcta */
+    background-image: url('https://i.imgur.com/UCDTyl4.jpeg'); /* Asegúrate de que la ruta sea correcta */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
