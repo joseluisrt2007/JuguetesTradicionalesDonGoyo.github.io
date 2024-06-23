@@ -284,9 +284,9 @@ table{
 }
 /*video*/
 .vid{
-    width: 500%;
-    height: 1000%;
-    object-fit: cover;
+    width: 60%;
+    height: 60%;
+        object-fit: cover;
 
 }
 /* Estilo para menu depegable*/
