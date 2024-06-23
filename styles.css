@@ -284,10 +284,10 @@ table{
     font-family: Roboto;
 }
 /*video*/
-iframe{
+.vid{
     width: 60%;
     height: 60%;
-        object-fit: cover;
+    object-fit: cover;
 
 }
 /* Estilo para menu depegable*/
