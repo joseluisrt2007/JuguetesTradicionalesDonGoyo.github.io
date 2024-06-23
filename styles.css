@@ -235,7 +235,7 @@ table{
 .textproc{
     font-family: Comic Sans Ms ;
     font-size: 60px;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 .textpro{
     font-family: Comic Sans Ms ;
@@ -285,8 +285,8 @@ table{
 }
 /*video*/
 .vid{
-    width: 300;
-    height: 300;
+    width: 500%;
+    height: 500%;
     object-fit: cover;
 
 }
