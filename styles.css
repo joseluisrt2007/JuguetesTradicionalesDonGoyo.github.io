@@ -283,11 +283,10 @@ table{
     font-family: Roboto;
 }
 /*video*/
-.vid{
-    width: 60%;
-    height: 60%;
-        object-fit: cover;
-
+.vid {
+    width: 80vw; /* Ajusta el ancho al 80% del ancho de la ventana del navegador */
+    height: 80vh; /* Ajusta la altura al 80% de la altura de la ventana del navegador */
+    object-fit: cover; /* Asegura que el video cubra todo el espacio del contenedor */
 }
 /* Estilo para menu depegable*/
 *{
