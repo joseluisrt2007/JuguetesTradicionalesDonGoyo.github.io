@@ -53,7 +53,7 @@
     <div class="search-container">
         <input type="text" id="searchBar" onkeyup="filterProducts()" placeholder="Buscar productos...">
     </div>
-
+    <br><br><br>
     <div class="cen">
         <table id="productTable">
             <tr>
@@ -127,21 +127,17 @@
             tr = table.getElementsByTagName("tr");
 
             for (i = 0; i < tr.length; i++) {
+                var rowVisible = false;
                 td = tr[i].getElementsByTagName("td");
-                var rowContainsFilter = false;
                 for (var j = 0; j < td.length; j++) {
                     if (td[j]) {
                         txtValue = td[j].textContent || td[j].innerText;
                         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                            rowContainsFilter = true;
+                            rowVisible = true;
                         }
                     }
                 }
-                if (rowContainsFilter) {
-                    tr[i].style.display = "";
-                } else {
-                    tr[i].style.display = "none";
-                }
+                tr[i].style.display = rowVisible ? "" : "none";
             }
         }
     </script>
