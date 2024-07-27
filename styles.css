@@ -566,11 +566,6 @@ background-color: #207377;
             padding: 10px;
         }
 
-        .carousel-item img {
-            width: 100%;
-            height: auto;
-        }
-
         .carousel-controls {
             text-align: center;
             margin: 20px 0;
