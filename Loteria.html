@@ -131,7 +131,6 @@
                 currentIndex = totalItems - itemsPerPage;
             }
 
-            const trackWidth = track.offsetWidth;
             const itemWidth = items[0].offsetWidth;
             const newTransform = -currentIndex * itemWidth;
             track.style.transform = `translateX(${newTransform}px)`;
