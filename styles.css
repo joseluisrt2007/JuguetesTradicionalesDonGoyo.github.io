@@ -549,6 +549,7 @@ background-color: #207377;
 
         .carousel-container {
             display: flex;
+            justify-content: center;
             overflow: hidden;
             width: 80%;
             margin: 0 auto;
@@ -589,4 +590,3 @@ background-color: #207377;
             background-color: #cccccc;
             cursor: not-allowed;
         }
- 
