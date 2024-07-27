@@ -6,40 +6,59 @@
     <meta name="description" content="Página de juguetes">
     <title>Juguetes Tradicionales DON GOYO</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Otros estilos existentes... */
+        
+        .search-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        #searchBar {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <a href="index.html"><img  src="https://i.imgur.com/P3Y5Qfl.jpeg" alt="logo" class="izl"></a>
+        <a href="index.html"><img src="https://i.imgur.com/P3Y5Qfl.jpeg" alt="logo" class="izl"></a>
         <div class="de" id="header">
             <ul class="nav">
                 <li><img src="https://i.imgur.com/cHQYzrz.png" alt="menu"class="de">
-            <ul class="izqu">
-                <li><a href="juguetes.html">Juguetes</a>
-                <li><a href="index.html">Página principal</a>
-                <li><a href="Misión.html"> Misión </a></li>
-                <li><a href="Visión.html"> Visión </a></li>
-                <li><a href="Quienes somos.html"> ¿Quiénes somos? </a></li>
-                <li><a href="Objetivo.html"> Objetivo </a></li>
-                <li><a href="Comercial.html"> Comercial</a></li>
-                <li><a href="Datos de contacto.html"> Datos de contacto </a></li>
-                   </li>
-                         </ul>
-            </li>
-        <a href="Carrito.html"><img src="https://i.imgur.com/IfZJFgs.jpeg" alt="carrio"class="des "></a>
+                    <ul class="izqu">
+                        <li><a href="juguetes.html">Juguetes</a></li>
+                        <li><a href="index.html">Página principal</a></li>
+                        <li><a href="Misión.html"> Misión </a></li>
+                        <li><a href="Visión.html"> Visión </a></li>
+                        <li><a href="Quienes somos.html"> ¿Quiénes somos? </a></li>
+                        <li><a href="Objetivo.html"> Objetivo </a></li>
+                        <li><a href="Comercial.html"> Comercial</a></li>
+                        <li><a href="Datos de contacto.html"> Datos de contacto </a></li>
+                    </ul>
+                </li>
+                <a href="Carrito.html"><img src="https://i.imgur.com/IfZJFgs.jpeg" alt="carrito" class="des"></a>
+            </ul>
+        </div>
     </header>
- 
-        <br>
-       <big> <h1 class="c">Juguetes</h1></big>
-        <br><br><br>
+    
+    <br>
+    <h1 class="c">Juguetes</h1>
+    <br><br><br>
 
-   
-    <!-- -->
+    <!-- Barra de búsqueda -->
+    <div class="search-container">
+        <input type="text" id="searchBar" onkeyup="filterProducts()" placeholder="Buscar productos...">
+    </div>
 
     <div class="cen">
-        <table >
+        <table id="productTable">
             <tr>
                 <td>
-                    <a href="Balero.html"><img src="https://i.imgur.com/WOnATJT.jpeg" class="tamañoimg"></a>  
+                    <a href="Balero.html"><img src="https://i.imgur.com/WOnATJT.jpeg" class="tamañoimg"></a>
                 </td>
                 <td>
                     <a href="Perinola.html"><img src="https://i.imgur.com/7iA7qN7.jpeg" class="tamañoimg"></a>
@@ -52,7 +71,7 @@
                 </td>
             </tr>
             <tr>
-                 <td>
+                <td>
                     <h3 class="text">Balero</h3><br>
                     <h3 class="text">$30 pesos</h3><br>
                     <a href="Balero.html" class="bt cb-amarillo ct-negro">Comprar</a>
@@ -60,68 +79,50 @@
                 <td>
                     <h3 class="text">Perinola</h3><br>
                     <h3 class="text">$15 pesos</h3><br>
-                    <a href="Perinola.html" class="bt cb-azul  ct-blanco">Comprar</a>
-
+                    <a href="Perinola.html" class="bt cb-azul ct-blanco">Comprar</a>
                 </td>
                 <td>
                     <h3 class="text">Trompo</h3><br>
                     <h3 class="text">$25 pesos</h3><br>
-                    <a href="Trompo.html" class="bt cb-verde  ct-blanco">Comprar</a>
-
+                    <a href="Trompo.html" class="bt cb-verde ct-blanco">Comprar</a>
                 </td>
                 <td>
                     <h3 class="text">Lotería</h3><br>
                     <h3 class="text">$20 pesos</h3><br>
-                     <a href="Loteria.html" class="bt cb-naranja  ct-blanco">Comprar</a>
-        </table>
-        <br><br>
-        <table>    
-            <tr>
-                <td>
-                    <a href="canicas.html"><img src="https://i.imgur.com/FhdY8sU.jpeg" class="tamañoimg"></a>  
-                </td>
-                <td>
-                    <a href="domino.html"><img src="https://i.imgur.com/ZFe9h6N.jpeg" class="tamañoimg"></a>
-                </td>
-                <td>
-                    <a href="yoyo.html"><img src="https://i.imgur.com/pwh24jo.jpeg" class="tamañoimg"></a>
-                </td>
-                <td>
-                    <a href="Tamborcito.html"><img src="https://i.imgur.com/UgZwWBc.jpeg" class="tamañoimg"></a>
+                    <a href="Loteria.html" class="bt cb-naranja ct-blanco">Comprar</a>
                 </td>
             </tr>
-            <tr>
-                 <td>
-                    <h3 class="text">Canicas</h3><br>
-                    <h3 class="text">$20 pesos</h3><br>
-                    <a href="canicas.html" class="bt cb-rosa  ct-blanco">Comprar</a>
-                </td>
-                <td>
-                    <h3 class="text">Domino</h3><br>
-                    <h3 class="text">$60 pesos</h3><br>
-                    <a href="domino.html" class="bt cb-azulclaro  ct-negro">Comprar</a>
-
-                </td>
-                <td>
-                    <h3 class="text">Yoyo</h3><br>
-                    <h3 class="text">$30 pesos</h3><br>
-                    <a href="yoyo.html" class="bt cb-morado  ct-blanco">Comprar</a>
-
-                </td>
-                <td>
-                    <h3 class="text">Tamborcito</h3><br>
-                    <h3 class="text">$35 pesos</h3><br>
-                     <a href="Tamborcito.html" class="bt cb-rojo  ct-blanco">Comprar</a>
-                   
-                </td>
-            </tr>
-
+            <!-- Añade más productos aquí -->
         </table>
-        <br>
-        <br>
+        <!-- Resto del contenido -->
     </div>
-  
 
+    <script>
+        function filterProducts() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("searchBar");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("productTable");
+            tr = table.getElementsByTagName("tr");
 
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td");
+                var rowContainsFilter = false;
+                for (var j = 0; j < td.length; j++) {
+                    if (td[j]) {
+                        txtValue = td[j].textContent || td[j].innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            rowContainsFilter = true;
+                        }
+                    }
+                }
+                if (rowContainsFilter) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 </body>
 </html>
