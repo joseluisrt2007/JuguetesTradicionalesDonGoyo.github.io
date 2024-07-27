@@ -545,5 +545,48 @@ background-color: #207377;
       font-size: 120px;
     text-align: center;
         font-family: cursive;
-
 }
+
+        .carousel-container {
+            display: flex;
+            overflow: hidden;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-item {
+            flex: 0 0 25%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-controls {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .carousel-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+
+        .carousel-button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+ 
