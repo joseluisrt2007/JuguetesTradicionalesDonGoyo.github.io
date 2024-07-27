@@ -21,6 +21,19 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
+
+        .product-container {
+            display: inline-block;
+            width: 22%;
+            margin: 1%;
+            vertical-align: top;
+            text-align: center;
+        }
+
+        .tamañoimg {
+            width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -53,113 +66,77 @@
     <div class="search-container">
         <input type="text" id="searchBar" onkeyup="filterProducts()" placeholder="Buscar productos...">
     </div>
-    <br><br><br>
-    <div class="cen">
-        <table id="productTable">
-             <tr>
-                <td>
-                    <a href="Balero.html"><img src="https://i.imgur.com/WOnATJT.jpeg" class="tamañoimg"></a>  
-                </td>
-                <td>
-                    <a href="Perinola.html"><img src="https://i.imgur.com/7iA7qN7.jpeg" class="tamañoimg"></a>
-                </td>
-                <td>
-                    <a href="Trompo.html"><img src="https://i.imgur.com/bkf8Ow8.jpeg" class="tamañoimg"></a>
-                </td>
-                <td>
-                    <a href="Loteria.html"><img src="https://i.imgur.com/ERWgwWf.jpeg" class="tamañoimg"></a>
-                </td>
-            </tr>
-            <tr>
-                 <td>
-                    <h3 class="text">Balero</h3><br>
-                    <h3 class="text">$30 pesos</h3><br>
-                    <a href="Balero.html" class="bt cb-amarillo ct-negro">Comprar</a>
-                </td>
-                <td>
-                    <h3 class="text">Perinola</h3><br>
-                    <h3 class="text">$15 pesos</h3><br>
-                    <a href="Perinola.html" class="bt cb-azul  ct-blanco">Comprar</a>
 
-                </td>
-                <td>
-                    <h3 class="text">Trompo</h3><br>
-                    <h3 class="text">$25 pesos</h3><br>
-                    <a href="Trompo.html" class="bt cb-verde  ct-blanco">Comprar</a>
-
-                </td>
-                <td>
-                    <h3 class="text">Lotería</h3><br>
-                    <h3 class="text">$20 pesos</h3><br>
-                     <a href="Loteria.html" class="bt cb-naranja  ct-blanco">Comprar</a>
-        </table>
-        <br><br>
-        <table>    
-            <tr>
-                <td>
-                    <a href="canicas.html"><img src="https://i.imgur.com/FhdY8sU.jpeg" class="tamañoimg"></a>  
-                </td>
-                <td>
-                    <a href="domino.html"><img src="https://i.imgur.com/ZFe9h6N.jpeg" class="tamañoimg"></a>
-                </td>
-                <td>
-                    <a href="yoyo.html"><img src="https://i.imgur.com/pwh24jo.jpeg" class="tamañoimg"></a>
-                </td>
-                <td>
-                    <a href="Tamborcito.html"><img src="https://i.imgur.com/UgZwWBc.jpeg" class="tamañoimg"></a>
-                </td>
-            </tr>
-            <tr>
-                 <td>
-                    <h3 class="text">Canicas</h3><br>
-                    <h3 class="text">$20 pesos</h3><br>
-                    <a href="canicas.html" class="bt cb-rosa  ct-blanco">Comprar</a>
-                </td>
-                <td>
-                    <h3 class="text">Domino</h3><br>
-                    <h3 class="text">$60 pesos</h3><br>
-                    <a href="domino.html" class="bt cb-azulclaro  ct-negro">Comprar</a>
-
-                </td>
-                <td>
-                    <h3 class="text">Yoyo</h3><br>
-                    <h3 class="text">$30 pesos</h3><br>
-                    <a href="yoyo.html" class="bt cb-morado  ct-blanco">Comprar</a>
-
-                </td>
-                <td>
-                    <h3 class="text">Tamborcito</h3><br>
-                    <h3 class="text">$35 pesos</h3><br>
-                     <a href="Tamborcito.html" class="bt cb-rojo  ct-blanco">Comprar</a>
-                   
-                </td>
-            </tr>
-        </table>
-        <br>
-        <br>
-        <br>
+    <div id="productList">
+        <div class="product-container">
+            <a href="Balero.html"><img src="https://i.imgur.com/WOnATJT.jpeg" class="tamañoimg"></a>
+            <h3 class="text">Balero</h3><br>
+            <h3 class="text">$30 pesos</h3><br>
+            <a href="Balero.html" class="bt cb-amarillo ct-negro">Comprar</a>
+        </div>
+        <div class="product-container">
+            <a href="Perinola.html"><img src="https://i.imgur.com/7iA7qN7.jpeg" class="tamañoimg"></a>
+            <h3 class="text">Perinola</h3><br>
+            <h3 class="text">$15 pesos</h3><br>
+            <a href="Perinola.html" class="bt cb-azul ct-blanco">Comprar</a>
+        </div>
+        <div class="product-container">
+            <a href="Trompo.html"><img src="https://i.imgur.com/bkf8Ow8.jpeg" class="tamañoimg"></a>
+            <h3 class="text">Trompo</h3><br>
+            <h3 class="text">$25 pesos</h3><br>
+            <a href="Trompo.html" class="bt cb-verde ct-blanco">Comprar</a>
+        </div>
+        <div class="product-container">
+            <a href="Loteria.html"><img src="https://i.imgur.com/ERWgwWf.jpeg" class="tamañoimg"></a>
+            <h3 class="text">Lotería</h3><br>
+            <h3 class="text">$20 pesos</h3><br>
+            <a href="Loteria.html" class="bt cb-naranja ct-blanco">Comprar</a>
+        </div>
+        <div class="product-container">
+            <a href="canicas.html"><img src="https://i.imgur.com/FhdY8sU.jpeg" class="tamañoimg"></a>
+            <h3 class="text">Canicas</h3><br>
+            <h3 class="text">$20 pesos</h3><br>
+            <a href="canicas.html" class="bt cb-rosa  ct-blanco">Comprar</a>
+        </div>
+        <div class="product-container">
+            <a href="domino.html"><img src="https://i.imgur.com/ZFe9h6N.jpeg" class="tamañoimg"></a>
+            <h3 class="text">Domino</h3><br>
+            <h3 class="text">$60 pesos</h3><br>
+            <a href="domino.html" class="bt cb-azulclaro  ct-negro">Comprar</a>
+        </div>
+        <div class="product-container">
+            <a href="yoyo.html"><img src="https://i.imgur.com/pwh24jo.jpeg" class="tamañoimg"></a>
+            <h3 class="text">Yoyo</h3><br>
+            <h3 class="text">$30 pesos</h3><br>
+            <a href="yoyo.html" class="bt cb-morado  ct-blanco">Comprar</a>
+        </div>
+        <div class="product-container">
+            <a href="Tamborcito.html"><img src="https://i.imgur.com/UgZwWBc.jpeg" class="tamañoimg"></a>
+            <h3 class="text">Tamborcito</h3><br>
+            <h3 class="text">$35 pesos</h3><br>
+            <a href="Tamborcito.html" class="bt cb-rojo  ct-blanco">Comprar</a>
+        </div>
     </div>
+    <br>
+    <br>
+    <br>
 
     <script>
         function filterProducts() {
-            var input, filter, table, tr, td, i, txtValue;
+            var input, filter, productList, products, productName, i, txtValue;
             input = document.getElementById("searchBar");
             filter = input.value.toUpperCase();
-            table = document.getElementById("productTable");
-            tr = table.getElementsByTagName("tr");
+            productList = document.getElementById("productList");
+            products = productList.getElementsByClassName("product-container");
 
-            for (i = 0; i < tr.length; i++) {
-                var rowVisible = false;
-                td = tr[i].getElementsByTagName("td");
-                for (var j = 0; j < td.length; j++) {
-                    if (td[j]) {
-                        txtValue = td[j].textContent || td[j].innerText;
-                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                            rowVisible = true;
-                        }
-                    }
+            for (i = 0; i < products.length; i++) {
+                productName = products[i].getElementsByTagName("h3")[0];
+                txtValue = productName.textContent || productName.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    products[i].style.display = "";
+                } else {
+                    products[i].style.display = "none";
                 }
-                tr[i].style.display = rowVisible ? "" : "none";
             }
         }
     </script>
