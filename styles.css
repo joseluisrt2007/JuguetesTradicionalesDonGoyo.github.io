@@ -210,7 +210,8 @@ table{
     border-radius: .5em;  /*esquinas rectas*/
     cursor: pointer;
     text-decoration: none;
-    background-color: yellow;
+    background-color: #28a745;
+    color: white;
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
 .btn1:hover{
