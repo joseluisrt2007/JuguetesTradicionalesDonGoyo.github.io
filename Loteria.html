@@ -45,53 +45,43 @@
         <br>
         <br>
    
-    <!--En esta parte se ofrecen 4 productos mas-->
+   <!-- Carrusel de productos -->
 
-    <div class="cen">
-        <table >
-            <tr>
-                <td>
-                    <a href="canicas.html"><img src="https://i.imgur.com/FhdY8sU.jpeg" class="tamre"></a>
-                </td>
-                <td>
-                    <a href="domino.html"><img src="https://i.imgur.com/ZFe9h6N.jpeg" class="tamre"></a>
-                </td>
-                <td>
-                    <a href="yoyo.html"><img src="https://i.imgur.com/pwh24jo.jpeg" class="tamre"></a>
-                </td>
-                <td>
-                    <a href="Tamborcito.html"><img src="https://i.imgur.com/UgZwWBc.jpeg" class="tamre"></a>
-                </td>
-            </tr>
-            <tr>
-                 <td>
-                    <h3 class="text">Canicas</h3><br>
-                    <h3 class="text">$20 pesos</h3><br>
-                    <a href="canicas.html" class="bt cb-rosa  ct-blanco">Comprar</a>
-                </td>
-                <td>
-                    <h3 class="text">Domino</h3><br>
-                    <h3 class="text">$60 pesos</h3><br>
-                    <a href="domino.html" class="bt cb-azulclaro  ct-negro">Comprar</a>
-
-                </td>
-                <td>
-                    <h3 class="text">Yoyo</h3><br>
-                    <h3 class="text">$30 pesos</h3><br>
-                    <a href="yoyo.html" class="bt cb-morado  ct-blanco">Comprar</a>
-
-                </td>
-                <td>
-                    <h3 class="text">Tamborcito</h3><br>
-                    <h3 class="text">$35 pesos</h3><br>
-                     <a href="Tamborcito.html" class="bt cb-rojo  ct-blanco">Comprar</a>
-                   
-                </td>
-            </tr>
-        </table>
+    <div class="carousel-container">
+        <div class="carousel-track">
+            <div class="carousel-item">
+                <a href="canicas.html"><img src="https://i.imgur.com/FhdY8sU.jpeg" class="tamre"></a>
+                <h3 class="text">Canicas</h3><br>
+                <h3 class="text">$20 pesos</h3><br>
+                <a href="canicas.html" class="bt cb-rosa ct-blanco">Comprar</a>
+            </div>
+            <div class="carousel-item">
+                <a href="domino.html"><img src="https://i.imgur.com/ZFe9h6N.jpeg" class="tamre"></a>
+                <h3 class="text">Domino</h3><br>
+                <h3 class="text">$60 pesos</h3><br>
+                <a href="domino.html" class="bt cb-azulclaro ct-negro">Comprar</a>
+            </div>
+            <div class="carousel-item">
+                <a href="yoyo.html"><img src="https://i.imgur.com/pwh24jo.jpeg" class="tamre"></a>
+                <h3 class="text">Yoyo</h3><br>
+                <h3 class="text">$30 pesos</h3><br>
+                <a href="yoyo.html" class="bt cb-morado ct-blanco">Comprar</a>
+            </div>
+            <div class="carousel-item">
+                <a href="Tamborcito.html"><img src="https://i.imgur.com/UgZwWBc.jpeg" class="tamre"></a>
+                <h3 class="text">Tamborcito</h3><br>
+                <h3 class="text">$35 pesos</h3><br>
+                <a href="Tamborcito.html" class="bt cb-rojo ct-blanco">Comprar</a>
+            </div>
+            <!-- Agrega más productos aquí si es necesario -->
+        </div>
+    </div>
+    <div class="carousel-controls">
+        <button class="carousel-button" id="prevButton" onclick="moveCarousel(-1)">Anterior</button>
+        <button class="carousel-button" id="nextButton" onclick="moveCarousel(1)">Siguiente</button>
     </div>
         <script>
-            document.getElementById('cantidad').addEventListener('input', function (event) {
+        document.getElementById('cantidad').addEventListener('input', function (event) {
             const value = event.target.value;
             if (value < 1) {
                 event.target.value = 1;
@@ -123,6 +113,35 @@
             localStorage.setItem('cart', JSON.stringify(cart));
             alert('Producto agregado al carrito');
         }
+
+        const track = document.querySelector('.carousel-track');
+        let currentIndex = 0;
+
+        function moveCarousel(direction) {
+            const items = document.querySelectorAll('.carousel-item');
+            const totalItems = items.length;
+            const itemsPerPage = 4;
+            currentIndex += direction;
+
+            if (currentIndex < 0) {
+                currentIndex = 0;
+            }
+            if (currentIndex > totalItems - itemsPerPage) {
+                currentIndex = totalItems - itemsPerPage;
+            }
+
+            const trackWidth = track.offsetWidth;
+            const itemWidth = items[0].offsetWidth;
+            const newTransform = -currentIndex * itemWidth;
+            track.style.transform = `translateX(${newTransform}px)`;
+
+            document.getElementById('prevButton').disabled = currentIndex === 0;
+            document.getElementById('nextButton').disabled = currentIndex >= totalItems - itemsPerPage;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            moveCarousel(0);
+        });
     </script>
     <br>
     <br>
