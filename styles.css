@@ -291,51 +291,70 @@ table{
     object-fit: cover; /* Asegura que el video cubra todo el espacio del contenedor */
 }
 /* Estilo para menu depegable*/
-*{
-    margin:0px;
+* {
+    margin: 0px;
     padding: 0px;
 }
-#header{
+
+#header {
     margin: auto;
     width: 600px;
     font-family: Arial, Helvetica, sans-serif;
-  
+    position: relative; /* Necesario para el uso de z-index */
 }
-ul{
+
+ul {
     list-style: none;
-    font-family: Comic Sans Ms ;
+    font-family: Comic Sans MS;
     font-size: 1.10em;
 }
-.izq{
-    float:left ;
-}
-.nav > li{
-    float: right;
 
+.izq {
+    float: left;
 }
-.nav li a{
-    background-color: #98FF98;
+
+.nav > li {
+    float: right;
+    position: relative; /* Necesario para que los submenús se posicionen absolutamente */
+}
+
+.nav li a {
+    background-color: #98FF98; /* Verde menta */
     color: black;
     text-decoration: none;
-    padding: 50px 60px;
+    padding: 20px 30px;
     display: block;
-
+    z-index: 1; /* Asegúrate de que el link principal esté en el nivel superior */
 }
 
-.nav li ul{
+.nav li ul {
     display: none;
     position: absolute;
     min-width: 140px;
+    z-index: 1000; /* Asegúrate de que el submenú esté en el nivel superior */
 }
-.nav li:hover > ul{
+
+.nav li:hover > ul {
     display: block;
 }
-.nav li ul li{
+
+.nav li ul li {
     position: relative;
 }
-.nav li ul li ul{
+
+.nav li ul li ul {
     right: 140px;
     top: 0px;
+}
+
+.titulo {
+    font-size: 60px;
+    text-align: center;
+}
+
+.texto {
+    font-size: 35px;
+    text-align: center;
 }
 /* Tamaño y forma de texto*/
 .titulo{
