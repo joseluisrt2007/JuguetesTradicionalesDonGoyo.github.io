@@ -321,9 +321,7 @@ ul{
     display: block;
 
 }
-.nav li a:hover{
-background-color: #207377;  
-}
+
 .nav li ul{
     display: none;
     position: absolute;
@@ -594,8 +592,4 @@ background-color: #207377;
 
         .carousel-table table {
             margin-bottom: 10px;
-        }
-        .div{
-            margin-left:5px;
-            margin-right:5px;
         }
