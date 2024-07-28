@@ -551,7 +551,7 @@ background-color: #207377;
             display: flex;
             justify-content: center;
             overflow: hidden;
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
         }
 
@@ -596,6 +596,6 @@ background-color: #207377;
             margin-bottom: 10px;
         }
         .div{
-            margin-left:40px;
-            margin-right:40px;
+            margin-left:20px;
+            margin-right:20px;
         }
