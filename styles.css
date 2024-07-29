@@ -300,8 +300,8 @@ table{
     margin: auto;
     width: 600px;
     font-family: Arial, Helvetica, sans-serif;
-    position: relative; /* Para que el z-index funcione */
-    z-index: 1000; /* Asegura que el header esté en el nivel superior */
+    position: relative; /* Asegúrate de que el header tenga un posicionamiento relativo */
+    z-index: 10; /* Puedes probar un valor menor aquí */
 }
 ul {
     list-style: none;
@@ -326,8 +326,8 @@ ul {
     display: none;
     position: absolute;
     min-width: 140px;
-    z-index: 2000; /* Asegura que el submenú esté en el nivel superior */
-    top: 100%; /* Posiciona el submenú justo debajo del elemento padre */
+    z-index: 1000; /* Asegúrate de que el submenú tenga un z-index mayor que el header */
+    top: 100%;
 }
 .nav li:hover > ul {
     display: block;
