@@ -292,49 +292,50 @@ table{
 }
 /* Estilo para menu depegable*/
 
-*{
-    margin:0px;
+* {
+    margin: 0px;
     padding: 0px;
 }
-#header{
+#header {
     margin: auto;
     width: 600px;
     font-family: Arial, Helvetica, sans-serif;
-  
+    position: relative; /* Para que el z-index funcione */
+    z-index: 1000; /* Asegura que el header esté en el nivel superior */
 }
-ul{
+ul {
     list-style: none;
-    font-family: Comic Sans Ms ;
+    font-family: Comic Sans MS;
     font-size: 1.10em;
 }
-.izq{
-    float:left ;
+.izq {
+    float: left;
 }
-.nav > li{
+.nav > li {
     float: right;
-
+    position: relative;
 }
-.nav li a{
+.nav li a {
     background-color: #98FF98;
     color: black;
     text-decoration: none;
     padding: 50px 60px;
     display: block;
-
 }
-
-.nav li ul{
+.nav li ul {
     display: none;
     position: absolute;
     min-width: 140px;
+    z-index: 2000; /* Asegura que el submenú esté en el nivel superior */
+    top: 100%; /* Posiciona el submenú justo debajo del elemento padre */
 }
-.nav li:hover > ul{
+.nav li:hover > ul {
     display: block;
 }
-.nav li ul li{
+.nav li ul li {
     position: relative;
 }
-.nav li ul li ul{
+.nav li ul li ul {
     right: 140px;
     top: 0px;
 }
