@@ -46,8 +46,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: relative; /* Asegúrate de que el body esté correctamente posicionado */
-    z-index: 1; /* Establece un z-index bajo si es necesario */
 }
 
 main {
@@ -294,56 +292,49 @@ table{
 }
 /* Estilo para menu depegable*/
 
-* {
-    margin: 0px;
+*{
+    margin:0px;
     padding: 0px;
 }
-#header {
+#header{
     margin: auto;
     width: 600px;
     font-family: Arial, Helvetica, sans-serif;
-    position: relative; /* Asegúrate de que el header tenga un posicionamiento relativo */
-    z-index: 10; /* Establece un z-index bajo si el menú debe estar encima */
+  
 }
-.nav {
-    position: relative; /* Asegúrate de que el contenedor de navegación tenga un posicionamiento relativo */
-    z-index: 1000; /* Establece un z-index alto para la navegación */
-}
-ul {
+ul{
     list-style: none;
-    font-family: Comic Sans MS;
+    font-family: Comic Sans Ms ;
     font-size: 1.10em;
 }
-.izq {
-    float: left;
+.izq{
+    float:left ;
 }
-.nav > li {
+.nav > li{
     float: right;
-    position: relative;
+
 }
-.nav li a {
+.nav li a{
     background-color: #98FF98;
     color: black;
     text-decoration: none;
     padding: 50px 60px;
     display: block;
+
 }
 
-.nav li ul {
+.nav li ul{
     display: none;
     position: absolute;
     min-width: 140px;
-    z-index: 2000; /* Asegúrate de que el submenú esté encima de otros elementos */
-    top: 100%; /* Posiciona el submenú justo debajo del elemento padre */
-    left: 0; /* Alinea el submenú con el elemento padre */
 }
-.nav li:hover > ul {
+.nav li:hover > ul{
     display: block;
 }
-.nav li ul li {
+.nav li ul li{
     position: relative;
 }
-.nav li ul li ul {
+.nav li ul li ul{
     right: 140px;
     top: 0px;
 }
