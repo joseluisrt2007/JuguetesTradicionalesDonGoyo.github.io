@@ -292,89 +292,51 @@ table{
 }
 /* Estilo para menu depegable*/
 
-Copiar código
-* {
-    margin: 0px;
+*{
+    margin:0px;
     padding: 0px;
 }
-
-#header {
+#header{
     margin: auto;
     width: 600px;
     font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    z-index: 10; /* Asegura que el header esté por encima de otros elementos */
+  
 }
-
-ul {
+ul{
     list-style: none;
-    font-family: Comic Sans MS;
+    font-family: Comic Sans Ms ;
     font-size: 1.10em;
-    padding: 0;
 }
-
-.izq {
-    float: left;
+.izq{
+    float:left ;
 }
-
-.nav > li {
+.nav > li{
     float: right;
-    position: relative; /* Necesario para que los submenús se posicionen absolutamente */
-}
 
-.nav li a {
-    background-color: #98FF98; /* Verde menta */
+}
+.nav li a{
+    background-color: #98FF98;
     color: black;
     text-decoration: none;
-    padding: 20px 30px;
+    padding: 50px 60px;
     display: block;
+
 }
 
-.nav li ul {
+.nav li ul{
     display: none;
     position: absolute;
     min-width: 140px;
-    z-index: 1000; /* Asegura que el submenú esté en el nivel superior */
 }
-
-.nav li:hover > ul {
+.nav li:hover > ul{
     display: block;
 }
-
-.nav li ul li {
+.nav li ul li{
     position: relative;
 }
-
-.nav li ul li ul {
+.nav li ul li ul{
     right: 140px;
     top: 0px;
-}
-
-.titulo {
-    font-size: 60px;
-    text-align: center;
-}
-
-.texto {
-    font-size: 35px;
-    text-align: center;
-}
-
-.cen {
-    overflow-x: auto;
-    white-space: nowrap;
-    position: relative; /* Asegura que la barra de productos se posicione correctamente */
-    z-index: 1; /* Asegura que la barra de productos esté por debajo del menú */
-}
-
-.cen table {
-    display: inline-table;
-    width: auto;
-}
-
-.tamre {
-    width: 100px; /* Ajusta según sea necesario */
-    height: auto;
 }
 /* Tamaño y forma de texto*/
 .titulo{
